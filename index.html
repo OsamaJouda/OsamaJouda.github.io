@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="description" content="Personal Osama Jouda Portfilio">
+    <meta name="keywords" content="HTML,CSS,JavaScript,osama, jouda,Portfilio,game, logo ">
+    <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+    <meta name="author" content="osama jouda">
+    <title>Osama Jouda Portfilio</title>
+    
+</head>
+<body>
+    
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        
+    </script>
+    <div class="grid">
+        <div class="navbar">
+                <img class="logo" src="assets/Artboard 1.png" alt="logo" >
+                <a class="nav1" href="#home">Home</a>
+                <a class="nav2"href="#about">About</a>
+                <a class="nav3"href="#graphic">Graphic</a>
+                <a class="nav4"href="#work">Work</a>
+                <a class="nav5"href="#contact">Contact</a>
+        </div>
+         
+        <div id="home" class="home"> 
+            <div id="mainCanvas">
+                <canvas id="myCanvas" class="myCanvas" ></canvas>
+                <canvas id="skyCanvas" class="skyCanvas" ></canvas>
+            </div>
+            <button type="submit"  id="refresh" onClick="refreshPage()">Restart</button>
+            <input id="mute" type="button" onclick="unmute()">           
+            <h3 id="timer">0</h3>  
+            <h3 id="speed">1X</h3> 
+            <div id="starScore" ></div>        
+            <h3 id="score">0</h3>
+            <h3 id="lives">0</h3>
+            <div id="shield"></div>
+            <h3 id="shieldCounter">Shield Timer</h3>
+            <div id="extraLives">
+            <div id="images"></div>
+            <h3> 50 = Extra Live</h3>
+            </div>
+               
+        </div>
+        
+
+        <div id="about" class="about">
+            <h3>About me : </h3>
+            <p>BH'S degree in computer information system & Web and Mobile developer from triOS college, Oracle, Oracle Database,
+                  SQL , JAVA, JavaScript, C#, Worked in Programming , Automotive industry,Hottel, transportation.</p>
+            <div class="langLogos">
+                <img class="langLogo" src="./assets/Android_logo175.png" alt="logo" >
+                <img class="langLogo" src="./assets/Microsoft_.NET_Logo.svg_.png" alt="logo" >
+                <img class="langLogo" src="./assets/illustrator-logo.png" alt="logo">
+                <img class="langLogo" src="./assets/ps_apple_logo.png" alt="logo">
+                <img class="langLogo" src="./assets/logo-csharp-e1440180921314.png" alt="logo">
+                <img class="langLogo" src="./assets/768_oracle_logo.png" alt="logo">
+                    
+            </div>
+        </div>
+        <div id="graphic" class="image">
+                <h3>illustrator-logo & Photoshop</h3>
+            <div class="pics">
+                
+                <img class="pic" src="./assets/face 2.png" alt="Face" >
+                <img class="pic" src="./assets/Model.png" alt="Face" >
+                <img class="pic" src="./assets/sky.png" alt="Face">
+                <img class="pic" src="./assets/SQuer.png" alt="Face">
+                <img class="pic" src="./assets/Sports.png" alt="Face">
+                <img class="pic" src="./assets/die hard poster.png" alt="Face">
+                
+            </div>
+        </div>  
+        <div id="work"  class="work">
+            <h3>web Page work</h3>
+            <div class="webPages">
+                <img class="webPage" src="./assets/CARWASH.png" alt="Web Page" >
+                <img class="webPage" src="./assets/Mock up 2.png" alt="Face" >
+                <img class="webPage" src="./assets/evilcorp.png" alt="Face">
+                <img class="webPage" src="./assets/Osama J web.png" alt="Face">
+                <img class="webPage" src="./assets/Untitled.png" alt="Face">
+                <img class="webPage" src="./assets/mockup1.png" alt="Face">
+                
+            </div>
+        </div>  
+        <div id="contact" class="contact"> 
+            <div class="container">
+                <form method="post" class="cntForm" action="mailto:osama_jouda@hotmail.com" 
+                            enctype="text/plain">
+                    <h4>Name : </h4><br>
+                    <input type="text" class="inputarea" name="name" value="name"/><br>
+                    <h4>Email : </h4><br>
+                    <input type="text" class="inputarea" name="email" value="email"/><br>
+                    <h4>Message : </h4><br>
+                    <textarea name="massege"></textarea><br>
+                    <input type="submit" value="Email">
+                </form>
+            </div>
+        </div>
+        
+     
+       
+    </div>
+    <div class="footer">Osama Jouda triOS College</div>
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/drawRocket.js"></script>
+    <script src="js/drawSky.js"></script>
+    <script src="js/drawStares.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/game.js"></script>   
+    
+    </body>
+
+</html>
