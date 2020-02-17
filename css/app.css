@@ -2,10 +2,11 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
-    background:url(../assets/204538-2261x1326-HTML.jpg);
-    background-repeat: no-repeat;
+    background:url("../assets/light_blue.png")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    font-size: 2vw;
 }
 
 
@@ -41,11 +42,12 @@ body{
     }
     
     .logo{
-        width: 70px;
+        width: 100px;
+        height: 90px;
         cursor: pointer;
-        background: #ccc;
-        border-radius: 50%;
-        margin: 0 40px;
+        background: #d8ff00;
+        border-radius: 20%;
+        margin: 0 22px;
         }
     .navbar a {
         width: 100%;
@@ -65,6 +67,24 @@ body{
         margin-left: 15%;
         z-index: 1;
         background: rgb(204, 237, 247, 0.2);
+    }
+    .picOj{
+        width: 180px;
+        height: 200px;    
+
+    }
+    .titel{
+        width: 80%;
+        height: 200px;
+        margin-left: 10%;
+    }
+    .ojPic{
+        width: 180px;
+        height: 200px;
+        border-radius: 25%;
+        margin-left: 40%;
+        margin-bottom: 2%;
+        margin-top: 2%;
     }
     /********************************************************************/
     #mainCanvas{
@@ -236,38 +256,40 @@ body{
 .about {
     width: 85%;
     margin-left: 15%;
-    background: rgb(31, 31, 30, .2);
+    background: rgb(31, 31, 30, .02);
     z-index: 1;
     color: #ccc;
 }
 .about h3{
     text-align: center;
- color: rgb(202, 253, 17);
- text-decoration: underline;
+    font-size: 2vw;
+    color: rgb(5, 17, 128);
+    text-decoration: underline;
 }
-    .about p{
-        font-size: 2vw;
-        margin:0 10% 2% 10%;
-        padding: 10px;
-        color: rgb(241, 235, 235);
-    }
+.about p{
+    font-size: 2vw;
+    margin: 2% 5% 2% 5%;
+    padding: 10px;
+    color: rgb(5, 17, 128);
+}
 
 .image {
     width: 85%;
     margin-left: 15%;
-    background: rgba(12, 12, 12, 0.5);
+    background: rgba(12, 12, 12, 0.05);
     z-index: 1;
     
 }
     .image h3{
+        font-size: 2vw;
         text-align: center;
-        color: rgb(253, 237, 17);
+        color: rgb(5, 17, 128);
         text-decoration: underline;
     }
 .work {
     width: 85%;
     margin-left: 15%;
-    background: rgb(31, 31, 30, .7);
+    background: rgb(31, 31, 30, .07);
     z-index: 1;
     
 }
@@ -279,9 +301,8 @@ body{
 }
 .langLogo{
     width: 10%;
-    margin: 5px 10%;
-    border-radius: 20%;
-    
+    margin: 5px 3%;
+    border-radius: 20%;    
 }
 .pics{
     width: 100%;
@@ -298,7 +319,7 @@ body{
    
     }
 .work {
-    background: rgba(105, 103, 103, 0.3);
+    background: rgba(105, 103, 103, 0.03);
 }
 .webPages{
     width: 100%;
@@ -307,10 +328,11 @@ body{
          
 }
     .work h3{
+        font-size: 2vw;
         text-align: center;
-        color: rgb(17, 253, 108);
+        color: rgb(5, 17, 128);
         text-decoration: underline;
-        font-size: 1.5em;
+        
     }
     .webPage {
         width: 18%;
@@ -337,10 +359,9 @@ body{
       font-size: 1.2em;
      }
 
-    textarea {
-        width:95%;
-        height: 100PX;
-    }
+   .container h4 {
+       margin: 5px auto;
+   }
      .inputarea   
     {
         width:40%;
@@ -352,7 +373,7 @@ body{
 width: 100%;
 position: fixed;
 bottom: 0;
-height: 30px;
+height: 40px;
 background-color: rgb(80, 78, 78);
 color: white;
 text-align: center;
@@ -365,6 +386,7 @@ float: left;
 @supports (display: grid){
     .grid{   
         display: grid;
+       
         width: 100%;
         margin-bottom: 40px;
         grid-template-columns: 150px repeat(4, 1fr);
@@ -382,8 +404,6 @@ float: left;
         "nav wrk wrk wrk wrk"
         "nav wrk wrk wrk wrk"
         "nav wrk wrk wrk wrk"
-        "nav cnt cnt cnt cnt"
-        "nav cnt cnt cnt cnt"
         "nav cnt cnt cnt cnt"
         "nav cnt cnt cnt cnt"
         "nav cnt cnt cnt cnt";
@@ -431,7 +451,7 @@ float: left;
             display: grid;
             grid-area: abt;
             width: 100%;
-            background: rgb(31, 31, 30, .2);
+            background: rgb(31, 31, 30, .02);
             z-index: 1;
             color: #ccc;
             margin-left: 0;
@@ -441,7 +461,7 @@ float: left;
             display: grid;
             grid-area: img;
             width: 100%;
-            background: rgb(31, 31, 30, .5);
+            background: rgb(31, 31, 30, .05);
             z-index: 1;
             color: #ccc;
             margin-left: 0;
@@ -450,7 +470,7 @@ float: left;
             display: grid;
             grid-area: wrk;
             width: 100%;
-            background: rgb(31, 31, 30, .7);
+            background: rgb(31, 31, 30, .07);
             z-index: 1;
             color: #ccc;
             margin-left: 0;
@@ -489,3 +509,12 @@ float: left;
            }
     
       }
+
+      .gm{
+          width: 200px;
+          height: 200px;
+          background: burlywood;
+      }
+      #html5-watermark {
+        display:none !important;
+     }

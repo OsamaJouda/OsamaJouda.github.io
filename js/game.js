@@ -1,29 +1,4 @@
-$(document).ready(function() {
-  $('a[href*=#]').bind('click', function(e) {
-      e.preventDefault(); // prevent hard jump, the default behavior
 
-      var target = $(this).attr("href"); // Set the target as variable
-
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: $(target).offset().top
-      }, 1000, function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
-      });
-
-      return false;
-  });
-  });
-
-  $(window).scroll(function() {
-      var scrollDistance = $(window).scrollTop();
-      $('.page-section').each(function(i) {
-              if ($(this).position().top <= scrollDistance) {
-                      $('.navigation a.active').removeClass('active');
-                      $('.navigation a').eq(i).addClass('active');
-              }
-      });
-}).scroll();
 ////////////////////////////////////////////////////////////////////////////
 (function () {
   let requestAnimationFrame = window.requestAnimationFrame
@@ -148,8 +123,7 @@ function draw(){
     drawRocket.drawRocket(x, y, pWidth, width, height, speed );
     requestAnimationFrame(draw);
   }
-  else{    //GAME OVER
-    gameOverSound.play();
+  else{    //GAME OVER   
     mute();
     ctx.clearRect(0, 0, width, height);
     ctx.font = "30px Arial";
@@ -229,7 +203,7 @@ function moves(){
   } // keyUp
 
   function mouseMoveHandler(e) {
-    relativeX = e.clientX - 450;
+    relativeX = e.clientX - 300;
     relativeY = e.clientY ;
     if(relativeX > 29 && relativeX < canvas.width - 25) {
       x = relativeX - pWidth/2;

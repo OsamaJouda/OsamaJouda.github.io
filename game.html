@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="description" content="Personal Osama Jouda Portfilio">
+    <meta name="keywords" content="HTML,CSS,JavaScript,osama, jouda,Portfilio,game, logo ">
+    <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+    <meta name="author" content="osama jouda">
+    <title>Osama Jouda Portfilio</title>
+    
+</head>
+<body class="gameBody">
+
+<script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        
+    </script>
+<div id="home" class="home"> 
+            <div id="mainCanvas">
+                <canvas id="myCanvas" class="myCanvas" ></canvas>
+                <canvas id="skyCanvas" class="skyCanvas" ></canvas>
+            </div>
+            <button type="submit"  id="refresh" onClick="refreshPage()">Restart</button>
+            <input id="mute" type="button" onclick="unmute()">           
+            <h3 id="timer">0</h3>  
+            <h3 id="speed">1X</h3> 
+            <div id="starScore" ></div>        
+            <h3 id="score">0</h3>
+            <h3 id="lives">0</h3>
+            <div id="shield"></div>
+            <h3 id="shieldCounter">Shield Timer</h3>
+            <div id="extraLives">
+            <div id="images"></div>
+            <h3> 50 = Extra Live</h3>
+            </div>
+               
+        </div>
+       <a class="nav1" href="index.html">Back</a>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/drawRocket.js"></script>
+    <script src="js/drawSky.js"></script>
+    <script src="js/drawStares.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/game.js"></script>   
+</html>
