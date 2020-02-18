@@ -260,7 +260,8 @@ function mouseClick(){
   if(!puse){
   shootX = relativeX -25 ;
   shootY =  relativeY ;
-  shootSound.play();
+  // shootSound.volume = 0.5;
+  // shootSound.play();
   shootSound.currentTime = 0;
   drawShooting();
   }
@@ -269,7 +270,7 @@ function mouseClick(){
 document.body.onkeyup = function(e){       //SPACE BAR 
   if(e.keyCode == 32){
     if(!puse){
-    shootSound.play(); 
+    // shootSound.play(); 
     shootSound.currentTime = 0;
     drawShooting();
   }
