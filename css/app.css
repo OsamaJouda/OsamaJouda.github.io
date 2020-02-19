@@ -337,6 +337,7 @@ body{
 .work {
     background: rgba(105, 103, 103, 0.03);
 }
+
 .webPages{
     width: 100%;
     height: auto;
@@ -350,11 +351,20 @@ body{
         text-decoration: underline;
         
     }
+    .webDiv{
+        width: 18%;
+        float: left;
+        margin: 33px 7%;
+    }
+    .webDiv h4{
+        text-align: center;
+        color: rgb(5, 17, 128);
+    }
     .webPage {
-        width: 19%;
+        width: 100%;
         height: 150px;
         border-radius: 5px;
-        margin: 33px 7%;
+        
         
         }
 .contact {
@@ -538,3 +548,4 @@ float: left;
       #html5-watermark {
         display:none !important;
      }
+     
