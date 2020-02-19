@@ -284,13 +284,7 @@ body{
     color: rgb(5, 17, 128);
 }
 
-.image {
-    width: 85%;
-    margin-left: 15%;
-    background: rgba(12, 12, 12, 0.05);
-    z-index: 1;
-    
-}
+
     .image h3{
         font-size: 2vw;
         text-align: center;
@@ -308,6 +302,7 @@ body{
 .langLogos{
     width: 100%;
     height: auto;
+    margin: 30px 0;
     
 }
 .langLogo{
@@ -318,24 +313,34 @@ body{
 .pics{
     width: 100%;
     height: auto;
-    padding: 5% 0;
+    padding: 2% 0;
     
 }
 
-
 .pic {
-    width: 15%;
-    margin: 35px 7%;
-    border-radius: 50%;
+    width: 19%;
+    margin: 33px 7%;
+    height: 150px;
+    border-radius: 5px;
    
     }
+    .pics  img {
+        transition: transform .5s ease;
+      }
+      
+    .pic:hover {
+        -ms-transform: scale(1.7); /* IE 9 */
+        -webkit-transform: scale(1.7); /* Safari 3-8 */
+        transform: scale(1.7); 
+      }
+
 .work {
     background: rgba(105, 103, 103, 0.03);
 }
 .webPages{
     width: 100%;
     height: auto;
-    padding: 6% 0;   
+    padding: 2% 0;   
          
 }
     .work h3{
@@ -346,7 +351,9 @@ body{
         
     }
     .webPage {
-        width: 18%;
+        width: 19%;
+        height: 150px;
+        border-radius: 5px;
         margin: 33px 7%;
         
         }
@@ -365,18 +372,20 @@ body{
     width: 50%;
     height: 70%;
     margin: 5% auto;
+    font-size: 1.5em;
 }
-    .cntForm {
-      font-size: 1.2em;
-     }
-
-   .container h4 {
-       margin: 5px auto;
-   }
+    
      .inputarea   
     {
         width:40%;
         height: 20px;
+    }
+    .btn {
+        height:30px; 
+        width:40%;
+        font-size: 0.7em;
+        font-weight: 700;
+        border-radius: 5px;
     }
 
 .footer {
@@ -426,7 +435,7 @@ float: left;
         height: 100%;
         width: 150px;
         position: fixed;
-        background-color: #111;
+        background-color: #191970;
         overflow-y: hidden;
         padding-top:  20px;
      
