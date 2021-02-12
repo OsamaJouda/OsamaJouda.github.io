@@ -39,7 +39,7 @@ drawRocket(x, y, pWidth, width, height, speed){
 /**************************************************************************************** */
 function drawBoom(x,y,width,canvasH){
     let boom = new Image();
-    boom.src ="./assets/boom.png";
+    boom.src ="./image/boom.png";
     let rocketCanvas2 = document.getElementById("myCanvas");
     let rocketCtx2 = rocketCanvas2.getContext("2d");
     rocketCtx2.clearRect(0, 0, width, canvasH);

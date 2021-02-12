@@ -2,7 +2,7 @@
 class DrawSky {
     constructor(){
         this.sky = new Image();
-        this.sky.src="./assets/cloudy.png";
+        this.sky.src="./image/cloudy.png";
         
         this.skyY = -100;
         this.skyCanvas = document.getElementById("skyCanvas");

@@ -84,6 +84,6 @@ function shieldCounter(){
   else{
     clearInterval(counterInterval);
     counter = 5;
-    document.getElementById("shieldCounter").innerHTML = "Shield Timer: " + counter;
+    document.getElementById("shieldCounter").innerHTML = "Shield Timer " ;
   }
 }

@@ -7,6 +7,10 @@
   || window.msRequestAnimationFrame;
   window.requestAnimationFrame = requestAnimationFrame;
 })();
+
+// var mainCanv = document.getElementById("mainCanvas");
+// let ctx1 = mainCanv.getContext("2d");
+// ctx1.height = window.innerHeight;
 //------------------------- VARIABLES--------------------------------//
 let drawRocket = new DrawRocket();
 let drawSky = new DrawSky();
@@ -31,7 +35,7 @@ let redScore = 0;
 //ROCKET
 
 let rocket = new Image();
-    rocket.src="./assets/rocket.png";    
+    rocket.src="./image/rocket.png";    
 let rocketX = 0;
 let rocketY = -150;
 let rocketW = 40;
@@ -57,7 +61,7 @@ let audioo = new Audio("./sound/boomSound.mp3");
 let backMusic = new Audio("./sound/BattleTheme.mp3");
 let star = new Audio("./sound/star.mp3");
 let shootSound = new Audio("./sound/shoot.wav")
-let gameOverSound = new Audio("./sound/No_mercy.wav");
+//let gameOverSound = new Audio("./sound/No_mercy.wav");
 
 audioo.muted = true;
 backMusic.muted = true;
@@ -67,7 +71,7 @@ backMusic.volume = 0.1;
 
 // STARES
 let redStar = new Image();
-    redStar.src="./assets/redStar.png";
+    redStar.src="./image/redStar.png";
 let redX = Math.floor(Math.random() * (+width - 0)) + 0; 
 let redY = -70;
 let redW = 50;
@@ -75,7 +79,7 @@ let redH = 50;
 let rStatuse = 1;
 
 let goldStar = new Image();
-    goldStar.src="./assets/goldStar.png";
+    goldStar.src="./image/goldStar.png";
 let goldX =Math.floor(Math.random() * (+width - 0)) + 0; 
 let goldY = -70;
 let goldW = 50;
@@ -85,9 +89,9 @@ let gStatuse = 1;
 // PLANE
 
 let plane = new Image();
-    plane.src="./assets/airplane.png";
+    plane.src="./image/airplane.png";
 let planShield = new Image();
-    planShield.src = "./assets/airplaneShield.png";
+    planShield.src = "./image/airplaneShield.png";
 let x = width / 2  ;
 let y = height -100;
 let pWidth = 50; //plane image width
@@ -96,7 +100,7 @@ let shield = 1;
 
 // SHOOTS
 let shootBulet = new Image();
-    shootBulet.src = "./assets/shoot.png";
+    shootBulet.src = "./image/shoot.png";
 let shootX = x;
 let shootY = y;
 let relativeX ;
@@ -203,7 +207,7 @@ function moves(){
   } // keyUp
 
   function mouseMoveHandler(e) {
-    relativeX = e.clientX - 300;
+    relativeX = e.clientX - canvas.width/2;
     relativeY = e.clientY ;
     if(relativeX > 29 && relativeX < canvas.width - 25) {
       x = relativeX - pWidth/2;
@@ -232,7 +236,8 @@ function drawPlane(){
 //-------------------------------SCORES -------------------------------//
 
 function drawScore() {
-   document.getElementById("score").innerHTML = goldScore +" <=> "+ redScore;
+   document.getElementById("gScore").innerHTML = "==> " + goldScore ;
+   document.getElementById("rScore").innerHTML = "==> " + redScore ;
 
 }
 //--------------------------------- LIVES ------------------------------//
@@ -260,8 +265,8 @@ function mouseClick(){
   if(!puse){
   shootX = relativeX -25 ;
   shootY =  relativeY ;
-  // shootSound.volume = 0.5;
-  // shootSound.play();
+  shootSound.volume = 0.5;
+  shootSound.play();
   shootSound.currentTime = 0;
   drawShooting();
   }
@@ -270,7 +275,7 @@ function mouseClick(){
 document.body.onkeyup = function(e){       //SPACE BAR 
   if(e.keyCode == 32){
     if(!puse){
-    // shootSound.play(); 
+    shootSound.play(); 
     shootSound.currentTime = 0;
     drawShooting();
   }
