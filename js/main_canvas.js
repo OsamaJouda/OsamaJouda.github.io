@@ -5,9 +5,18 @@ var screenW;
 var stars = [];
 var fps = 60;
 var numStars = 500;
-document.addEventListener('DOMContentLoaded', mainStar) ;
-// $('document').ready(function() {
-  function mainStar() {
+
+
+
+
+mainFunction();
+window.addEventListener('resize', resizeWind);
+ 
+function resizeWind(){
+	stars=[];
+	mainFunction();
+}
+	function mainFunction(){
   // Calculate the screen size
 	screenH = $(window).height();
 	screenW = $(window).width() - 30;
@@ -35,7 +44,7 @@ document.addEventListener('DOMContentLoaded', mainStar) ;
 	}
 	
 	animateInterval = setInterval(animate, 1000 / fps);
-};
+}
 
 /**
  * Animate the canvas

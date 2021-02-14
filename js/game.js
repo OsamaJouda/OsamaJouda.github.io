@@ -149,7 +149,7 @@ function moves(){
   document.addEventListener("keydown", keyDownHandler, false);
   document.addEventListener("keyup", keyUpHandler, false);
   document.addEventListener("mousemove", mouseMoveHandler, false);
-  
+  document.addEventListener("touchmove", touchMove);
   if(rightPressed && x < canvas.width-pWidth) {
     x += 7;
   }
@@ -217,6 +217,17 @@ function moves(){
     }
   }//MouseMoves
 
+}
+
+function touchMove(e){
+  relativeX = e.touches[0].screenX - canvas.width/2-50;
+    relativeY = e.touches[0].screenY -100;
+    if(relativeX > 29 && relativeX < canvas.width - 25) {
+      x = relativeX - pWidth/2;
+    }
+    if (relativeY > 50 && relativeY < canvas.height - 10){
+      y = relativeY - pHeight ;
+    }
 }
 //------------------------- DRAW PLANE  --------------------------------//
 

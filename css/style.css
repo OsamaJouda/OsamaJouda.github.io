@@ -1,6 +1,6 @@
 
 html, body {
-    width: 100%;
+    width: 98%;
     height: 100%;  
     min-height: 600px; 
     margin: 0;
@@ -8,10 +8,10 @@ html, body {
     background: #000 ;    
    
   }
-
+/************************ Main Background ***************************************/
 #space {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     z-index: 0;
     min-height: 700px; 
@@ -25,24 +25,35 @@ html, body {
     text-decoration: none;
     list-style: none;
     font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 3;
   }
-
+/************************Main Nav***************************************/
     .main-nav {
-        display: flex;
-        height: 8vh;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        height: 8vh;        
         color: #ffffff;
         font-size: 1.5em;
         z-index: 3;
-        text-align: right;
+        cursor: pointer;
       }
       
       .nav-links {
-        display: flex;
-        width: 40%;
+        
+        width: 80%;       
         justify-content: space-around;
         z-index: 3;
+        float: right;
+        text-align: right;
+        cursor: pointer;
+      
+      }
+      li{
+        display: inline-block;
+        z-index: 5;
+        cursor: pointer;
+      }
+      li :hover{
+        background-color: rgb(24, 97, 160);
       }
       .burger {
         display: none;
@@ -61,7 +72,7 @@ html, body {
       
       @media screen and (max-width: 800px) {
         .nav-links {
-          width: 60%;
+          width: 90%;
         }
       }
       .main-nav.show .line1 {
@@ -78,7 +89,7 @@ html, body {
       }
       @media screen and (max-width: 800px) {
         .nav-links {
-          width: 60%;
+          width: 90%;
         }
       }
       @media screen and (max-width: 700px) {
@@ -103,7 +114,7 @@ html, body {
       }
 
 
-
+/************************Main***************************************/
 
 .Main{
     width: 50%;
@@ -114,7 +125,7 @@ html, body {
 }
 
 
-    
+/************************ ABOUT ***************************************/
 .about {
     width: 85%;
     height: 700px;
@@ -153,7 +164,7 @@ html, body {
     margin: 5px 5%;
     border-radius: 20%;    
 }
-
+/************************  Graphic  ***************************************/
 .graphic {
     width: 90%;
     margin: 5% auto;    
@@ -190,7 +201,7 @@ html, body {
         transform: scale(1.5); 
       }
 
-
+/************************ WORK ***************************************/
 .work {
     width: 90%;
     height: auto;
