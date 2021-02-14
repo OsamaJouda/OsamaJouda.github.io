@@ -6,10 +6,6 @@ body{
     background-color: black; 
    
 }
-
-
-
-
 #mainCanvas{
     width: 60%;    
     height: 95vh;
@@ -152,4 +148,161 @@ body{
     width: 50px;
     height: 50px;
    
+}
+/***************************** Screen 370px *******************************/
+@media screen and (min-width: 374px) {
+   
+body{
+    width: 372px;   
+    height: 100vh;
+    min-width: 370px;
+    margin: 0;
+    background-color: black; 
+   
+}
+#mainCanvas{
+    width: 99%;    
+    height: 70vh;
+    margin-right: 0;
+    margin-top: 0;
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    cursor: none;
+    
+}
+.myCanvas{
+    width: 100%;
+    height: 70vh;
+    border: 1px solid black;
+    background: url("../image/clearSky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: none;
+    
+}
+.skyCanvas{
+    width: 100%;    
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    z-index: 5; 
+    cursor: none;
+}
+
+.mainControl{
+    margin-top: 5px;
+    width: 100%;
+    min-width: 370px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    font-size: 1em;
+}
+.control{
+    width: 124px;  
+    height: 50px;
+    background: rgb(165, 233, 241);    
+    font-family: 'Cambo', serif;      
+    line-height: 50px;
+    margin: 5px auto;
+    border-radius: 10px; 
+    float: left;
+}
+.control span{
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    
+   
+}
+.mainScore{
+    width: 124px;   
+    height: 50px;
+    background: rgb(165, 233, 241);    
+    font-family: 'Cambo', serif;
+    border-radius: 10px; 
+    line-height: 50px;
+    margin: 5px auto;
+    float: left;
+    
+}
+.scoreImage{
+    float: left;
+    width: 50%;
+    min-width: 50px;
+    height: 50px;
+    text-align: right;
+   
+}
+.scoreNumber{
+   width: 50%;
+   height: 50px; 
+   float: left;
+  text-align: left;
+}
+.control-btn{
+    width: 80%;
+    height: 50px;
+    font-family: 'Cambo', serif;   
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 5px auto;
+    float: left;
+    
+}
+.btnControl {    
+    width: 49%;
+    height: 50px;       
+    font-family: 'Cambo', serif;    
+    background: rgb(165, 233, 241); 
+    border-radius: 10px;   
+    cursor: pointer;
+    
+}
+.mute {        
+    width: 50px;
+    height: 50px;
+    background: url('/image/icon_final.png');
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    cursor: pointer;
+    float: left;
+}
+.mainGuide{
+    width: 200px;
+    min-width: 200px;
+    height: 50px;
+    font-family: 'Cambo', serif;
+    vertical-align: middle;    
+    margin: 5px auto;
+    float: left;
+}
+.guide{
+    width: 95%;
+    min-width: 100px;
+    height: 50px;    
+
+    line-height: 60px;
+}
+.guide span{
+    width: 140px;
+    height: 50px;
+    float: right;
+    font-size: 1em;
+    color: wheat;
+    text-align: left;
+}
+.guide img{
+    width: 50px;
+    height: 50px;
+   
+}
 }
