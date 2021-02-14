@@ -150,7 +150,7 @@ body{
    
 }
 /***************************** Screen 370px *******************************/
-@media screen and (min-width: 374px) {
+@media screen and (max-width: 380px) {
    
 body{
     width: 372px;   
@@ -210,7 +210,7 @@ body{
     font-family: 'Cambo', serif;      
     line-height: 50px;
     margin: 5px auto;
-    border-radius: 10px; 
+    border-radius: 0px; 
     float: left;
 }
 .control span{
@@ -225,7 +225,7 @@ body{
     height: 50px;
     background: rgb(165, 233, 241);    
     font-family: 'Cambo', serif;
-    border-radius: 10px; 
+    border-radius: 0px; 
     line-height: 50px;
     margin: 5px auto;
     float: left;
@@ -261,7 +261,7 @@ body{
     height: 50px;       
     font-family: 'Cambo', serif;    
     background: rgb(165, 233, 241); 
-    border-radius: 10px;   
+    border-radius: 0px;   
     cursor: pointer;
     
 }
